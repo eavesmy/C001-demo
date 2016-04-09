@@ -1,0 +1,25 @@
+extends ./public/font
+block content
+    .ask-nav
+        label
+            | 提问搜索：
+            input(type="text" placeholder="搜索提问")
+            button 搜索
+    table
+        thead
+            th # 
+            th 问题标题
+            th 回复数量
+            th 问题状态
+            th 问题管理
+        tbody
+            tr
+                td 1
+                td 国内柴油机技术发展前景
+                td 108条
+                td 未解决
+                td 
+                    button 修改
+                    button 删除
+        
+        

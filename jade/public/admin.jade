@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="../public/css/style.css")
+    script(src="../public/js/main.js")
+    title 后台管理系统
+body
+    nav
+        span.nav-logo 在线答疑系统
+        span.nav-user 当前用户： 黄晓明
+        span.nav-info 用户中心
+    .c
+        .left
+            .title 我的工作台
+            .body
+                a(href="./font_aq.html").index 首页
+                a(href="./admin_user.html").index 用户管理
+                a(href="./admin_level.html").index 管理员权限管理
+                a(href="./admin_content.html").index 内容管理
+                a(href="./admin_interest.html").index 用户兴趣管理
+        .right
+            .title 此处为页面标题（后台获取）
+            .body
+                block content

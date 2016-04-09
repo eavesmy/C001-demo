@@ -1,0 +1,12 @@
+extends ./public/font
+block content
+    .ask
+        input(placeholder="填写问题标题")
+        textarea(placeholder="请详细描述问题")
+        .row
+            select.btn.btn-blue
+                option 悬赏分
+                option 1 分
+                option 2 分
+                option 3 分
+            button.btn.btn-red 确认提问
