@@ -63,6 +63,15 @@ textarea {
     position: relative;
 }
 
+.c .admin-index {
+    display: block;
+    text-align: left;
+    padding: 10px 0;
+    cursor: pointer;
+    margin: 5px 20px;
+    position: relative;
+}
+
 .c .index .index-span {
     position: absolute;
     left: -7px;
@@ -271,5 +280,29 @@ table td button {
 }
 
 .admin table th {
-    padding: 0 30px;
+    padding: 0 10px;
+}
+
+.admin .icon {
+    margin: 10px;
+    border: 1px solid #000;
+    border-width: 0px 0px 1px 1px;
+    height: 200px;
+}
+
+.admin .icon .colum {
+    display: inline-block;
+    width: 20px;
+    background: #8d7777;
+    margin-left: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.admin .icon .colum .title {
+    position: relative;
+}
+
+.admin .icon .colum .count {
+    position: relative;
 }

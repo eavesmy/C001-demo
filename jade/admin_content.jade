@@ -1,6 +1,9 @@
 extends ./public/admin
 block content
     .admin
+        .title 文档数量：3187条    
+            label
+                input(type="text" placeholder="查找条目")
         table
             thead
                 th #
@@ -8,7 +11,9 @@ block content
                 th 提问者
                 th 提问时间
                 th 问题状态
-                th 回答数量
+                th 答复数
+                th 分词
+                th 最后一次更新
                 th 操作
             tbody
                 tr
@@ -18,6 +23,8 @@ block content
                     td 2016-03-01
                     td 未解决
                     td 20条
+                    td 计算机 智能
+                    td 2016-04-10
                     td
                         button 查看
                         button 删除

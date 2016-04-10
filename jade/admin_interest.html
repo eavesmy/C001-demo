@@ -1,1 +1,16 @@
-<!DOCTYPE html><html lang="en"></html><head><meta charset="UTF-8"/><link rel="stylesheet" href="../public/css/style.css"/><script src="../public/js/main.js"></script><title>后台管理系统</title></head><body><nav><span class="nav-logo">在线答疑系统</span><span class="nav-user">当前用户： 黄晓明</span><span class="nav-info">用户中心</span></nav><div class="c"><div class="left"><div class="title">我的工作台</div><div class="body"><a href="./font_aq.html" class="index">首页</a><a href="./admin_user.html" class="index">用户管理</a><a href="./admin_level.html" class="index">管理员权限管理</a><a href="./admin_content.html" class="index">内容管理</a><a href="./admin_interest.html" class="index">用户兴趣管理</a></div></div><div class="right"><div class="title">此处为页面标题（后台获取）</div><div class="body"><div class="admin"><div class="title">添加兴趣<label><input/><button>添加</button></label></div><div class="interest title">查找兴趣<label><input/></label><div class="body-content"><span>汽车 -</span><span>通讯 -</span><span>前端 -</span><span>旅游 -</span><span>互联网 -</span></div></div></div></div></div></div></body>
+<!DOCTYPE html><html lang="en"></html><head><meta charset="UTF-8"/><link rel="stylesheet" href="../public/css/style.css"/><script src="../public/js/main.js"></script><title>后台管理系统</title></head><body><nav><span class="nav-logo">在线答疑系统</span><span class="nav-user">当前用户： 黄晓明</span><span class="nav-info">用户中心</span></nav><div class="c"><div class="left"><div class="title">我的工作台</div><div class="body"><a href="./font_aq.html" class="admin-index">首页</a><a href="./admin_user.html" class="admin-index">用户管理</a><a href="./admin_level.html" class="admin-index">管理员权限管理</a><a href="./admin_content.html" class="admin-index">内容管理</a><a href="./admin_interest.html" class="admin-index">用户兴趣管理</a></div></div><div class="right"><div class="title">此处为页面标题（后台获取）</div><div class="body"><div class="admin"><div class="title">添加兴趣<label><input/><button>添加</button></label></div><div class="interest title">查找兴趣<label><input/></label><div class="body-content"><span>汽车 -</span><span>通讯 -</span><span>前端 -</span><span>旅游 -</span><span>互联网 -</span></div></div><div class="icon"><div class="colum"><div class="title">经济金融</div><div class="count">90</div></div><div class="colum"><div class="title">企业管理</div><div class="count">156</div></div><div class="colum"><div class="title">法律法规</div><div class="count">123</div></div><div class="colum"><div class="title">社会民生</div><div class="count">79</div></div><div class="colum"><div class="title">科学教育</div><div class="count">160</div></div><div class="colum"><div class="title">健康生活</div><div class="count">156</div></div><div class="colum"><div class="title">体育运动</div><div class="count">147</div></div><div class="colum"><div class="title">文化艺术</div><div class="count">139</div></div><div class="colum"><div class="title">电子数码</div><div class="count">142</div></div><div class="colum"><div class="title">电脑网络</div><div class="count">144</div></div><div class="colum"><div class="title">娱乐休闲</div><div class="count">146</div></div></div><script>var a = document.getElementsByClassName('colum'),
+h,
+t,
+c,
+i;
+for(i = 0;i<a.length;i++){
+    h = a[i].childNodes[1].innerHTML;
+    c = a[i].childNodes[1];
+    t = a[i].childNodes[0];
+    
+    a[i].style.height = h + 'px';
+    a[i].style.top = (200-h) + 'px';
+    
+    c.style.top = (h-200)+'px'
+    t.style.top =(Number(h)+1)+'px';
+}</script></div></div></div></div></body>

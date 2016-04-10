@@ -16,3 +16,55 @@ block content
                 span 前端 -
                 span 旅游 -
                 span 互联网 -
+        .icon
+            .colum
+                .title 经济金融
+                .count 90
+            .colum
+                .title 企业管理
+                .count 156
+            .colum
+                .title 法律法规
+                .count 123
+            .colum
+                .title 社会民生
+                .count 79
+            .colum
+                .title 科学教育
+                .count 160
+            .colum
+                .title 健康生活
+                .count 156
+            .colum
+                .title 体育运动
+                .count 147
+            .colum
+                .title 文化艺术
+                .count 139
+            .colum
+                .title 电子数码
+                .count 142
+            .colum
+                .title 电脑网络
+                .count 144
+            .colum
+                .title 娱乐休闲
+                .count 146
+        script.
+            var a = document.getElementsByClassName('colum'),
+            h,
+            t,
+            c,
+            i;
+            for(i = 0;i<a.length;i++){
+                h = a[i].childNodes[1].innerHTML;
+                c = a[i].childNodes[1];
+                t = a[i].childNodes[0];
+                
+                a[i].style.height = h + 'px';
+                a[i].style.top = (200-h) + 'px';
+                
+                c.style.top = (h-200)+'px'
+                t.style.top =(Number(h)+1)+'px';
+            }
+            
